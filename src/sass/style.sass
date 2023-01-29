@@ -1,0 +1,68 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+
+
+html
+    box-sizing: border-box
+
+*,*::before, *::after
+    box-sizing: inherit
+
+body
+    font-family: 'Noto Sans', sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 19px
+
+a
+    color: inherit
+    text-decoration: none
+
+.header
+    background-image: url(../img/header-bg.jpg) 
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    color: #fff
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 70px 10px 38px
+    &__title
+        font-weight: 700
+        font-size: 64px
+        line-height: 87px
+        span
+            display: block
+            font-size: 42px
+            line-height: 57px
+    &__subtitle
+        font-size: 18px
+        line-height: 25px
+        margin-top: auto
+    &__button
+        margin-top: 50px
+        margin-bottom: auto
+
+.button
+    &__path
+        transition: fill .5s
+    &:hover &__path
+        fill: #a9a32a
+    &__text
+        font-size: 18px
+        line-height: 25px
+        display: inline-block
+        transform: translate(-57px, -17px)
+
+.social
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item
+        margin-right: 20px
+        &:last-child
+            margin-right: 0
